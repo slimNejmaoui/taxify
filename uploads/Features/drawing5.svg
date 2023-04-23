@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg2159"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="drawing5.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2161"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.71624579"
+     inkscape:cx="396.51193"
+     inkscape:cy="421.64297"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="224"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2156">
+    <rect
+       x="293.75546"
+       y="464.94882"
+       width="29.797203"
+       height="17.990765"
+       id="rect56857-3" />
+    <rect
+       x="293.75546"
+       y="464.94882"
+       width="29.797203"
+       height="17.990765"
+       id="rect56857-3-2" />
+    <rect
+       x="293.75546"
+       y="464.94882"
+       width="29.797203"
+       height="17.990765"
+       id="rect56857-3-0" />
+    <rect
+       x="293.75546"
+       y="464.94882"
+       width="29.797203"
+       height="17.990765"
+       id="rect56857-3-2-3" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g63913"
+       transform="matrix(3.6768811,0,0,5.2759997,-546.32577,-102.97952)">
+      <rect
+         style="fill:#ffff00;stroke:#000000;stroke-width:0.536527;stroke-opacity:1"
+         id="rect2981-7-6"
+         width="39.463474"
+         height="39.463474"
+         x="139.43266"
+         y="-111.06532"
+         transform="rotate(45)" />
+      <rect
+         style="fill:#000000;stroke:#000000;stroke-width:0.446513;stroke-opacity:1"
+         id="rect2981-3-0-7"
+         width="32.842663"
+         height="32.842663"
+         x="142.65457"
+         y="-107.54582"
+         transform="matrix(0.7076093,0.70660391,-0.7076093,0.70660391,0,0)" />
+      <g
+         id="g63901">
+        <path
+           style="fill:#000000;stroke:#ffff00;stroke-width:0.899999;stroke-dasharray:none"
+           d="m 166.30866,51.451481 c -1.66761,-2.32951 -5.3534,-0.32873 1.56189,-6.39633 5.13154,-4.5025 4.97712,-2.56031 7.80947,-1.8594 3.27589,0.81067 2.64383,-2.08099 3.27254,-3.57004 l 1.41314,-3.34692 8.92511,8.6276 -2.67753,4.46256 c 0,0 4.53692,-7.06571 0,0 -5.12872,7.98735 -4.16505,-1.48752 -8.3301,4.46255 l -4.16505,5.95007 c -5.1292,-7.32357 -5.20631,-5.5534 -7.80947,-8.33009 z"
+           id="path56676"
+           sodipodi:nodetypes="cssscccsscc" />
+        <text
+           xml:space="preserve"
+           transform="matrix(0.27523823,-0.51589258,0.39931578,0.35559166,-87.215655,29.409383)"
+           id="text56855-6"
+           style="white-space:pre;shape-inside:url(#rect56857-3-0);display:inline;fill:#ffff00;stroke:#ffff00;stroke-width:0;stroke-dasharray:none"
+           inkscape:transform-center-x="-2.1305171"
+           inkscape:transform-center-y="-2.5991851"><tspan
+             x="293.75586"
+             y="475.89718"
+             id="tspan1327">$</tspan></text>
+        <text
+           xml:space="preserve"
+           transform="matrix(0.31853576,-0.59704727,0.46213186,0.41152953,-140.95578,34.047874)"
+           id="text56855-6-8"
+           style="white-space:pre;shape-inside:url(#rect56857-3-2-3);display:inline;fill:#ffff00;stroke:#ffff00;stroke-width:0;stroke-dasharray:none"
+           inkscape:transform-center-x="-2.4656724"
+           inkscape:transform-center-y="-3.0080603"><tspan
+             x="293.75586"
+             y="475.89718"
+             id="tspan1329">$</tspan></text>
+        <ellipse
+           style="fill:#ffff00;stroke:#ffff00;stroke-width:0;stroke-dasharray:none"
+           id="path56949"
+           cx="177.7599"
+           cy="47.122154"
+           rx="2.3140345"
+           ry="1.893301" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+	.message_overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+	opacity: .20;
+	filter: alpha(opacity=20);
+	-moz-opacity: .20;
+	z-index: 5000;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.dialog_header {
+	position: fixed;
+	width: 380px;
+	height:auto;
+	display:table;
+	top: 40%;
+	left: 50%;
+	margin-left: -190px;
+	margin-top: -100px;
+	background-color: #ffffff;
+	padding: 0px;
+	z-index: 5000;
+
+	font-size:18px;
+}
+.dialog_title {
+	/*background-image: url(../images/navbar-bg.png);*/
+	background:#ec118f;
+	padding: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	z-index: 5000;
+}
+.dialog_title a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#table_body{
+	padding:30px;
+	color:#ec118f;
+	font-size:16px;
+	z-index: 5000;
+	border-radius: 5px;
+}
