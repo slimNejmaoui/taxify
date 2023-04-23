@@ -290,35 +290,5 @@ window.addEventListener('scroll', () => {
   lastScrollPosition = currentScrollPosition;
 });
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 
-          const sendEmail = () => {
-            const category_id = document.getElementsByName('category_id')[0].value;
-            const user_id = document.getElementsByName('user_id')[0].value;
-            const name = document.getElementsByName('name')[0].value;
-            const email = document.getElementsByName('email')[0].value;
-            const subject = document.getElementsByName('subject')[0].value;
-            const message = document.getElementsByName('message')[0].value;
-
-            const smtpSettings = {
-                host: 'smtp.elasticemail.com',
-                username: 'slim.nejmawii@gmail.com',
-                password: '20D8134CFEF2AFFAF7724539DB7095476658',
-                secureToken: 'true',
-            };
-
-            Email.send({
-                SecureToken: "8b9ac0c1-78bc-4aa1-9429-3495214433f2",
-                To: 'slim.nejmawii@gmail.com',
-                From: email,
-                Subject: `Contact Form Submission - ${subject}`,
-                Body: `Category ID: ${category_id} <br> User :${user_id} <br> Name: ${name} <br> Email: ${email} <br> Message: ${message}`,
-                ...smtpSettings,
-            }).then(() => {
-                alert('Email sent successfully!');
-            }).catch((error) => {
-                console.error(error);
-                alert('An error occurred while sending the email.');
-            });
-        };
 
