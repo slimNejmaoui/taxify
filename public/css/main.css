@@ -30,12 +30,39 @@ img{
     width:200px ;
     height: 200px;
 
+
+}
+
+
+
+.card-title img {
+  width: 500px;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+#img-fluid {
+
+  width:500px ;
+  height: 200px;
+
 }
 .card-text{
 
     color:#f2ca06;
 }
 h2{
+    color:#f2ca06;
+
+}
+h3{
+    color:#f2ca06;
+
+}
+h4{
     color:#f2ca06;
 
 }
@@ -73,10 +100,10 @@ h2{
   #contact p {
     color: #d8c306;
 }
-.hover-yellow:hover {
+/* .hover-yellow:hover {
     color: yellow;
   }
-  
+   */
   .homepage{
     background-color: #000;
   }
@@ -252,5 +279,32 @@ h2{
     height: 2px;
     background-color: #000;
     background-image: linear-gradient(to right, #000, #d8c306, #000);
+  }
+  
+  @media (max-width: 768px) {
+    /* Modify styles for screens smaller than 768px */
+    .owl-carousel .item {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Modify styles for screens smaller than 576px */
+    .owl-carousel .item {
+      padding: 0;
+    }
+    .card-title img {
+      width: 50%;
+    }
+    .card-title h4 {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    /* Modify styles for screens smaller than 400px */
+    .card-title h4 {
+      font-size: 16px;
+    }
   }
   
