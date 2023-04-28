@@ -354,13 +354,10 @@ $(document).ready(function(){
       }
     });
   }
-  // Récupérer tous les éléments de réponse
 var answers = document.querySelectorAll('.answer');
 
-// Pour chaque réponse, ajouter un écouteur d'événements sur le clic
 answers.forEach(function(answer) {
   answer.addEventListener('click', function() {
-    // Ajouter la classe "active" à l'élément parent
     answer.parentNode.classList.toggle('active');
   });
 });
@@ -369,10 +366,9 @@ answers.forEach(function(answer) {
 	google.maps.event.trigger(map, 'resize');
   });
 
-
-  function changeLanguage(lang) {
+function changeLanguage(lang) {
 	i18next.changeLanguage(lang, function(err, t) {
-	  // retraduire le contenu de la page
+	  localStorage.setItem('language', lang);
 	  document.querySelectorAll('[data-i18n]').forEach(function(element) {
 		var key = element.getAttribute('data-i18n');
 		element.innerHTML = t(key, { escape: false });
@@ -380,3 +376,14 @@ answers.forEach(function(answer) {
 	});
   }
   
+  document.addEventListener('DOMContentLoaded', function() {
+	var language = localStorage.getItem('language');
+	if (language) {
+	  changeLanguage(language);
+	}
+  });
+  
+  
+  
+
+

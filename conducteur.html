@@ -2,7 +2,9 @@
 
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- Mirrored from pinktaxi.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Apr 2023 14:40:23 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
 
@@ -250,7 +252,7 @@
             #main-header .nav li ul,
             .et-search-form,
             #main-header .et_mobile_menu {
-                background-color: #ffffff
+                background-color: yellow
             }
 
             .et_header_style_centered .mobile_nav .select_page,
@@ -285,20 +287,34 @@
             }
         }
     </style>
-
-
     <script src="uploads/i18next-22.4.15/i18next.min.js"></script>
     <script src="uploads/i18next-22.4.15/i18next.js"></script>
     <script src="locales/en.json"></script>
     <script src="locales/fr.json"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.4.15/i18next.js"></script> -->
-
 </head><!--/head-->
 
 <body id="home" class="homepage ml-4">
 
 
+    <script>
 
+        function initMap() {
+            var myLatLng = { lat: 46.204391, lng: 6.143158 };
+
+
+            var map = new google.maps.Map(document.getElementById('map_canvas'), {
+                zoom: 12,
+                center: myLatLng
+            });
+
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'TaxiFy'
+            });
+        }
+
+    </script>
     <script src="uploads/i18next-22.4.15/i18next.min.js"></script>
     <script>
         i18next.init({
@@ -911,7 +927,6 @@
         </div>
     </section>
 
-
     <div class="card border border-yellow">
         <footer id="footer">
             <div class="container">
@@ -965,25 +980,10 @@
     </div>
     <section id="copyrights">
         <div class="container ">
-            <span class="text text-warning">Copyright @ 2023 TaxiFy,genev switzerland</span>
+            <span class="text text-warning">Copyright © 2023. All rights reserved - TaxiFy.Swiss</span>
         </div>
     </section>
-
-    <script src="public/js/jquery.js"></script>
-    <script src="public/js/message.js"></script>
-    <!-- <script src="public/js/bootstrap.min.js"></script> -->
-    <script src="public/js/owl.carousel.min.js"></script>
-    <script src="public/js/mousescroll.js"></script>
-    <script src="public/js/smoothscroll.js"></script>
-    <script src="public/js/jquery.prettyPhoto.js"></script>
-    <script src="public/js/jquery.isotope.min.js"></script>
-    <script src="public/js/jquery.inview.min.js"></script>
-    <script src="public/js/wow.min.js"></script>
-    <script src="public/js/main.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-
+    <!-- // Configuration SMTPJS pour l'envoi d'e-mails via Gmail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         const sendEmail = () => {
@@ -1016,6 +1016,28 @@
         };
     </script>
 
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/message.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/owl.carousel.min.js"></script>
+    <script src="public/js/mousescroll.js"></script>
+    <script src="public/js/smoothscroll.js"></script>
+    <script src="public/js/jquery.prettyPhoto.js"></script>
+    <script src="public/js/jquery.isotope.min.js"></script>
+    <script src="public/js/jquery.inview.min.js"></script>
+    <script src="public/js/wow.min.js"></script>
+    <script src="public/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
 
     <script>
         function initMap(mapId) {
@@ -1024,14 +1046,23 @@
             var map = new google.maps.Map(document.getElementById(mapId), {
                 zoom: 12,
                 center: myLatLng
+
+
             });
+
+
+
 
             var marker = new google.maps.Marker({
                 position: myLatLng,
                 map: map,
                 title: 'TaxiFy'
             });
+
+
         }
+
+
 
         // Appeler la fonction initMap() pour chaque carte
         initMap("map_canvas1");
