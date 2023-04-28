@@ -25,8 +25,9 @@
 
 
     <link href="public/css/responsive.css" rel="stylesheet">
-    <link rel="svg\Logos TaxiFy WebSite vectors (1).svg" href="Logos TaxiFy WebSite vectors (1).svg" />
+    <link href="Logos TaxiFy WebSite vectors (1).svg" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
     <title>TaxiFy |</title>
@@ -251,7 +252,7 @@
             #main-header .nav li ul,
             .et-search-form,
             #main-header .et_mobile_menu {
-                background-color: #ffffff
+                background-color: yellow
             }
 
             .et_header_style_centered .mobile_nav .select_page,
@@ -286,6 +287,10 @@
             }
         }
     </style>
+    <script src="uploads/i18next-22.4.15/i18next.min.js"></script>
+    <script src="uploads/i18next-22.4.15/i18next.js"></script>
+    <script src="locales/en.json"></script>
+    <script src="locales/fr.json"></script>
 </head><!--/head-->
 
 <body id="home" class="homepage ml-4">
@@ -310,6 +315,142 @@
         }
 
     </script>
+    <script src="uploads/i18next-22.4.15/i18next.min.js"></script>
+    <script>
+        i18next.init({
+            lng: 'fr',
+            debug: true,
+            resources: {
+                fr: {
+                    translation: {
+                        navbar: {
+                            home: 'Accueil',
+                            driver: 'Je suis un taxi',
+                            info: 'TaxiFy info',
+                            contact: 'Contact',
+                            maps: 'Cliquez sur la carte pour bénéficier d une meilleure expérience',
+                            paragraph1: 'Utilisez votre application mobile pour réserver une course maintenant ou planifier une pour plus tard en sélectionnant une date et une heure spécifiques. Vous pouvez également nous appeler ou nous envoyer un e-mail et nous serons heureux de vous aider',
+                            paragraph2: 'Pourquoi choisir TaxiFy',
+                            paragraph3: 'COMMENT UTILISER TAXIFY ?',
+                            txt1: "Commander",
+                            txt2: 'Voyager',
+                            txt3: "Payer",
+                            paragraph5: "Contactez-nous",
+                            paragraph6: "Êtes-vous intéressé par nos services? Souhaitez-vous nous informer devos questions ou suggestions? Voulez-vous nous contacter concernant l un de vos problèmes ou plaintes?<br><b>Sil vous plaît, remplissez ce formulaire et nous vous contacterons bientôt.",
+                            titre2: "Reason for contacting us",
+                            titre1: "Envoyez-nous un message",
+                            titre3: "Demande de renseignements",
+                            titre4: "Réclamations et suggestions",
+                            titre5: "Support",
+                            titre6: "Autre",
+                            nom: "Nom",
+                            email: "E-mail",
+                            sujet: "Sujet",
+                            message: "Message",
+                            envoyer: " Envoyer le message",
+                            title: "FAQ - Réservation de taxi",
+                            question1: "Comment puis-je réserver un taxi ?",
+                            answer1: "Vous pouvez réserver un taxi en utilisant notre formulaire de réservation en ligne, en appelant notre service clientèle ou en utilisant notre application mobile.",
+                            question2: "Quels types de véhicules sont disponibles pour la réservation ?",
+                            answer2: "Nous proposons une large gamme de véhicules pour répondre à tous vos besoins, notamment des berlines, des minivans et des voitures de luxe.",
+                            question3: "Puis-je annuler ma réservation ?",
+                            answer3: "Oui, vous pouvez annuler votre réservation à tout moment. Cependant, des frais d'annulation peuvent s'appliquer en fonction du moment de l'annulation.",
+                            question4: "Comment puis-je payer pour ma réservation ?",
+                            answer4: "Nous acceptons les paiements par carte de crédit, PayPal et virement bancaire.",
+                            question5: "Y a-t-il des frais supplémentaires pour les réservations tardives ?",
+                            answer5: "Des frais supplémentaires peuvent s'appliquer pour les réservations effectuées tard le soir ou tôt le matin. Veuillez contacter notre service clientèle pour plus d'informations.",
+                            addressTitle: "ADRESSE",
+                            address: "21 2023 TaxiFy, Genève Suisse, 2023 TaxiFy, Genève",
+                            phoneTitle: "NUMÉRO DE TÉLÉPHONE",
+                            phone: "471 02 5566447788 \n471 02 5566447788",
+                            connectTitle: "CONNECTEZ-VOUS AVEC NOUS",
+                            facebook: "",
+                            youtube: "",
+                            linkedin: "",
+                            instagram: "",
+                            siteMapTitle: "PLAN DU SITE",
+                            termsAndConditions: "Terms &#038; Conditions",
+                            faq: "FAQ",
+                            map: "Augmentez votre activité de Taxi à Genève Prenez des courses à la volée avec TaxiFy",
+                            installText: "Installez notre application pour chauffeur TaxiFyDriver maintenant !",
+                            how_it_works: "Comment ça marche ?",
+                            credit_account: "CREDITEZ VOTRE COMPTE",
+                            take_rides: "PRENEZ DES COURSES",
+                            drive_clients: "CONDUISEZ LES CLIENTS",
+                            cash_out: "ENCAISSEZ LA COURSE",
+                            taxify_fee: "La redevance de TaxiFy est directement déduite de votre compte TaxiFy"
+                        }
+                    }
+                },
+                en: {
+                    translation: {
+                        navbar: {
+                            home: 'Home',
+                            driver: 'I am a driver',
+                            info: 'TaxiFy info',
+                            contact: 'Contact',
+                            maps: "Click on the map for a better experience",
+                            paragraph1: 'Use your mobile app to book a ride now or schedule one for later by selecting a specific date and time. You can also call or email us and we will be happy to assist you',
+                            paragraph2: 'Why choose TaxiFy',
+                            paragraph3: 'HOW TO USE TAXIFY?',
+                            txt1: "Order",
+                            txt2: 'To travel',
+                            txt3: "Pay",
+                            paragraph5: "contact us",
+                            paragraph6: "Are you interested in our services? Would you like to inform us ofyour questions or suggestions? Do you want to contact us regarding any of your problems or complaints?<br><b>Please fill out this form and we will contact you shortly.",
+                            nom: "Name",
+                            email: "E-mail",
+                            sujet: "Subject",
+                            message: "Message",
+                            envoyer: " Send Message",
+                            titre1: "Send us a message",
+                            titre3: "Request information",
+                            titre4: "Complaints and suggestions",
+                            titre5: "Support",
+                            titre6: "other",
+                            title: "FAQ - Taxi Reservation",
+                            question1: "How can I book a taxi?",
+                            answer1: "You can book a taxi using our online reservation form, by calling our customer service or by using our mobile application.",
+                            question2: "What types of vehicles are available for reservation?",
+                            answer2: "We offer a wide range of vehicles to meet all your needs, including sedans, minivans, and luxury cars.",
+                            question3: "Can I cancel my reservation?",
+                            answer3: "Yes, you can cancel your reservation at any time. However, cancellation fees may apply depending on the timing of the cancellation.",
+                            question4: "How can I pay for my reservation?",
+                            answer4: "We accept payments by credit card, PayPal, and bank transfer.",
+                            question5: "Are there any additional fees for late bookings?",
+                            answer5: "Additional fees may apply for bookings made late at night or early in the morning. Please contact our customer service for more information.",
+                            addressTitle: "ADDRESS",
+                            address: "21 2023 TaxiFy, Geneva Switzerland, 2023 TaxiFy, Geneva",
+                            phoneTitle: "PHONE NUMBER",
+                            phone: "471 02 5566447788 \n471 02 5566447788",
+                            connectTitle: "CONNECT WITH US",
+                            facebook: "",
+                            youtube: "",
+                            linkedin: "",
+                            instagram: "",
+                            siteMapTitle: "SITE MAP",
+                            home: "Home",
+                            termsAndConditions: "Terms &#038; Conditions",
+                            faq: "FAQ",
+                            contact: "Contact",
+                            map: "Boost your Taxi Business in Geneva. Take on-the-go rides with TaxiFy",
+                            installText: "Install our TaxiFyDriver driver application now!",
+                            how_it_works: "How It Works",
+                            credit_account: "CREDIT YOUR ACCOUNT",
+                            take_rides: "TAKE RIDES",
+                            drive_clients: "DRIVE CLIENTS",
+                            cash_out: "CASH OUT",
+                            taxify_fee: "The TaxiFy fee is deducted directly from your TaxiFy account"
+
+
+                        }
+                    }
+                }
+            }
+        }, function (err, t) {
+            // initialized and ready to go!
+        });
+    </script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwCm-fsILkbITW6mbDMxgY7JZ0Xn7HSYA&amp;callback=initMap"></script>
     <header id="header">
@@ -328,31 +469,51 @@
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right">
+
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class=""><a href="conducteur.html">je suis un taxi </a></li>
-                        <li class=""><a href="info.html">TaxiFy info</a></li>
+                        <li class="active"><a data-i18n="navbar.home" href="index.html">Accueil</a></li>
+                        <li class=""><a data-i18n="navbar.driver" href="conducteur.html">Je suis un taxi</a></li>
+                        <li class=""><a data-i18n="navbar.info" href="info.html">TaxiFy info</a></li>
+                        <li class=""><a data-i18n="navbar.contact" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav language-selector">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-globe"></i>
+                                <span class="language-selected">Langues</span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
 
-                        <li class=""><a href="contact.html">Contact</a></li>
-
+                                <li><a onclick="changeLanguage('fr')"><i class="fa fa-check"></i> Français</a></li>
+                                <li><a onclick="changeLanguage('en')"><i class="fa fa-check"></i> English</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
+
+
+
+
+
             </div><!--/.container-->
         </nav><!--/nav-->
     </header><!--/header-->
     <hr class="hr-line">
-
-    <div class="row">
-        <div class="col-lg-12">
-            <div id="map_canvas1" style="width:100%; height: 600px; position:relative;"></div>
-            <div
-                style="position:absolute; top:50%; left:50%; transform:translate(-50%, -150%); background-color:black; opacity:0.8; padding:20px; border-radius:10px;">
-                <h2 class="text-center">Augmentez votre activité de Taxi à Genève
-                    Prenez des courses à la volée avec TaxiFy</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="map_canvas1" style="width:100%; height: 600px; position:relative;"></div>
+                <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -150%);  padding:10px;">
+                    <h2 class="text-center "
+                        style="color:black; font-size:70px;margin-block: -229px; background-color: transparent;word-spacing: 16px;font-family: CAL Bodoni Ferrara Display Extra Bold;  text-transform: inherit;"
+                        data-i18n="navbar.map">
+                        Augmentez votre activité de Taxi à Genève Prenez des courses à la volée avec TaxiFy
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
-
 
 
 
@@ -360,172 +521,187 @@
 
 
 
-    <div class="card border border-yellow m-5">
+    <div class="card border border-yellow m-1">
         <section id="cta" class="wow fadeIn" style="background-color: #fae232; color: black;">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
-                        <p> Installez notre application pour chauffeur TaxiFyDriver maintenant </p>
+                        <p data-i18n="navbar.installText">Installez notre application pour chauffeur TaxiFyDriver
+                            maintenant !
+                        </p>
                     </div>
-                    <div class="col-sm-3 text-right">
-                        <a class="store-btn google-play" target="_blank"
-                            href="https://play.google.com/store/apps/details?id=taxify.switzerland.taxi.driver&amp;hl=fr_CH&amp;gl=US"></a>
-                        <a class="store-btn app-store" target="_blank"
-                            href="https://play.google.com/store/apps/details?id=taxify.switzerland.taxi.passenger&amp;hl=fr_CH&amp;gl=US"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div><!--/#cta-->
-    <hr class="hr-line">
-
-    <section id="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="card-text text-center  ">Pourquoi devenir un chauffeur TaxiFy ? </h2>
-                <p class=" card-text text-center ">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.</p>
-            </div>
-            <div class="container-fluid bg-dark">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="owl-carousel center">
-
-                            <div class="item">
-                                <div class="card bg-yellow text-dark">
-                                    <div class="card-body">
-                                        <div class="card-title d-flex justify-content-center align-items-center">
-                                            <img class="img-fluid " src="uploads/imagesSVG/Image3.svg" alt="">
-                                            <h4 class="mb-1 ">TaxiFy
-                                                services</h4>
-                                        </div>
-                                        <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card bg-yellow text-dark">
-                                    <div class="card-body">
-                                        <div class="card-title d-flex justify-content-center align-items-center">
-                                            <img class="img-fluid " src="uploads/imagesSVG/Image2.svg" alt="">
-                                            <h4 class="mb-1 ">TaxiFy
-                                                services</h4>
-                                        </div>
-                                        <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card bg-yellow text-dark">
-                                    <div class="card-body">
-                                        <div class="card-title d-flex justify-content-center align-items-center">
-                                            <img class="img-fluid " src="uploads/imagesSVG/Image4.svg" alt="">
-                                            <h4 class="mb-1 ">TaxiFy
-                                                services</h4>
-                                        </div>
-                                        <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card bg-yellow text-dark">
-                                    <div class="card-body">
-                                        <div class="card-title d-flex justify-content-center align-items-center">
-                                            <img class="img-fluid " src="uploads/imagesSVG/Image5.svg" alt="">
-                                            <h4 class="mb-1 ">TaxiFy
-                                                services</h4>
-                                        </div>
-                                        <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua.</p>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <div class="col-sm-3 d-flex justify-content-center align-items-center">
+                        <div>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=taxify.switzerland.taxi.driver&amp;hl=fr_CH&amp;gl=US">
+                                <img class="btn" src="uploads/Features/google.png" alt="Google Play Store"
+                                    style="width: 170px; height: 60px ;">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://apps.apple.com/us/app/taxify-driver/id6444804563?l=zh">
+                                <img class="btn" src="uploads/Features/apple.png" alt="Apple App Store"
+                                    style="width: 170px; height: 60px ;">
+                            </a>
                         </div>
                     </div>
                 </div>
+                <div class="row d-none d-lg-flex justify-content-end align-items-center">
+                    <div class="col-lg-2">
+                        <img class="img-fluid qr-btn"
+                            src="uploads/Features/QR code appli chauffeur (Apple & Android).JPG" alt=""
+                            style="transform: rotate(90deg); margin-right: 40px;">
+                    </div>
+                </div>
             </div>
 
 
-        </div>
-    </section><!--/#features-->
+
+        </section>
+    </div><!--/#cta-->
+    <hr class="hr-line">
+    <div class="container">
+        <section id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="card-text text-center" data-i18n="navbar.paragraph2">Pourquoi choisir TaxiFy ?</h2>
+                    <p class="card-text text-center">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="row">
+                    <div class=" col-md-3 col-sm-12">
+                        <div class="card bg-yellow text-dark">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="uploads/imagesSVG/Image3.svg" alt="">
+                                    <h4 data-i18n="navbar.paragraph4" class="mb-1 text text-center">TaxiFy services</h4>
+                                </div>
+                                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-12">
+                        <div class="card bg-yellow text-dark">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="uploads/imagesSVG/Image2.svg" alt="">
+                                    <h4 class="mb-1 text text-center">TaxiFy services</h4>
+                                </div>
+                                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-md-3 col-sm-12">
+                        <div class="card bg-yellow text-dark">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="uploads/imagesSVG/Image4.svg" alt="">
+                                    <h4 class="mb-1 text text-center">TaxiFy services</h4>
+                                </div>
+                                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class=" card bg-yellow text-dark d-none d-sm-block">
+                            <div class="card-body">
+                                <div class="card-title d-flex justify-content-center align-items-center">
+                                    <img class="img-fluid" src="uploads/imagesSVG/Image5.svg" alt="">
+                                    <h4 class="mb-1 text text-center">TaxiFy services</h4>
+                                </div>
+                                <p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div><!--/#features-->
     <hr class="hr-line">
 
     <!-- Process -->
     <section id="work-process">
         <div class="container">
             <div class="section-header">
-                <h2 class="card-text text-center wow fadeInDown">Comment ça marche ?</h2>
+                <h2 class="card-text text-center wow fadeInDown" data-i18n="navbar.how_it_works">Comment ça marche ?
+                </h2>
                 <p class="text-center wow fadeInDown"></p>
             </div>
+
             <div class="row text-center">
-                <div class="col-md-3 col-md-3 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-
-                        </p>
-
-                        <p><img src="uploads/imagesSVG/image6.svg" alt="" style="margin-left: -30px;"></p>
-
-
-                        <h3 class="mb-1 ">CREDITEZ <br> VOTRE COMPTE
-                        </h3>
-
+                <div class="col-md-2 col-xs-12 mb-4">
+                    <div class="image1 wow fadeInLeft" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <img class="img-fluid" src="uploads/imagesSVG/image6.svg" alt="" style="margin-left: -8px;">
+                    </div>
+                    <h3 class="text1 wow fadeInLeft" data-wow-duration="400ms" data-wow-delay="0ms"
+                        style="margin-bottom:130px ;" data-i18n="navbar.credit_account">CREDITEZ <br>VOTRE
+                        COMPTE</h3>
+                </div>
+                <div class="col-md-1 col-xs-12 mb-4 order-first order-md-last">
+                    <div class="image4 wow fadeInLeft align-self-center" data-wow-duration="400ms"
+                        data-wow-delay="500ms">
+                        <img class="img-fluids" src="uploads/imagesSVG/fleche.svg" alt=""
+                            style="width: 140px;height: 140px; margin-left: 20px;">
                     </div>
                 </div>
-                <div class="col-md-3 col-md-3 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-
-                        <p><img src="uploads/imagesSVG/image7.svg" alt="" style="margin-left: -30px;"></p>
-
-                        <h3 class="mb-1 ">PRENEZ <br> DES COURSES
-
-                        </h3>
-
-                        <p class="ml-4" style="position: absolute; top: 50%; transform: translate(1%,-120%); ">
-                            <img src="uploads/imagesSVG/fleche.svg" alt=""
-                                style=" height: 70px;width:140px;margin-left: -70px;">
-                        </p>
+                <div class="col-md-2 col-xs-12 mb-4">
+                    <div class="image1 wow fadeInLeft" data-wow-duration="400ms" data-wow-delay="800ms">
+                        <img class="img-fluid" src="uploads/imagesSVG/image7.svg" alt="">
+                    </div>
+                    <h3 class="text1 wow fadeInLeft align-self-center mt-3" data-wow-duration="400ms"
+                        data-wow-delay="800ms" style="margin-bottom:130px ;" data-i18n="navbar.take_rides">
+                        PRENEZ <br> DES COURSES</h3>
+                </div>
+                <div class="col-md-1 col-xs-12 mb-4 order-first order-md-last">
+                    <div class="image4 wow fadeInLeft align-self-center" data-wow-duration="1000ms"
+                        data-wow-delay="1000ms">
+                        <img class="img-fluids" src="uploads/imagesSVG/fleche.svg" alt=""
+                            style="width: 140px;height: 140px;">
                     </div>
                 </div>
-                <div class="col-md-3 col-md-3 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-
-
-                        <p><img src="uploads/imagesSVG/image8.svg" alt=""></p>
-                        <p class="ml-4" style="position: absolute; top: 50%; transform: translate(-50%,-120%); ">
-                            <img src="uploads/imagesSVG/fleche.svg" alt=""
-                                style=" height: 70px;width:140px;margin-left: -70px;">
-                        </p>
-
-                        <h3>CONDUISEZ <br> LES CLIENTS
-                        </h3>
-
+                <div class="col-md-2 col-xs-12 mb-4">
+                    <div class="image3 wow animated fadeInLeft" data-wow-duration="400ms" data-wow-delay="1500ms">
+                        <img class="img-fluid" src="uploads/imagesSVG/image8.svg" alt="">
+                    </div>
+                    <h3 class="text2 wow animated fadeInLeft" data-wow-duration="400ms" data-wow-delay="1500ms"
+                        style="margin-bottom:130px ;" data-i18n="navbar.drive_clients">
+                        CONDUISEZ <br> LES CLIENTS</h3>
+                </div>
+                <div class="col-md-2 col-xs-12 mb-4 order-first order-md-last">
+                    <div class="image4 wow fadeInLeft align-self-center" data-wow-duration="400"
+                        data-wow-delay="1800ms">
+                        <img class="img-fluids " src="uploads/imagesSVG/fleche.svg" alt=""
+                            style="width: 140px;height: 140px; margin-right: -70px;">
                     </div>
                 </div>
-                <div class="col-md-3 col-md-3 col-xs-12">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <p style="position: absolute; left: 50%; top: 50%; transform: translate(-130%, -120%);">
-                            <img src="uploads/imagesSVG/fleche.svg" alt="" style=" height: 70px;width:140px;">
-                        </p>
 
-                        <p><img src="uploads/imagesSVG/image5.svg" alt="" style="margin-left: 70px;"></p>
-                        <h3 class="mb-1 ">ENCAISSEZ <br> LA COURSE
-                        </h3>
-
+                <div class="col-md-2 col-xs-12 mb-4 order-first order-md-last ">
+                    <div class="image5 wow fadeInLeft align-self-center" data-wow-duration="400ms"
+                        data-wow-delay="2000ms">
+                        <img class="img-fluid" src="uploads/imagesSVG/image5.svg" alt="" style="margin-left: 1px;">
                     </div>
+                    <h3 class="text3 wow fadeInLeft" data-wow-duration="400ms" data-wow-delay="2000ms"
+                        style="margin-bottom:130px ;" data-i18n="navbar.cash_out">ENCAISSEZ <br> LA COURSE</h3>
                 </div>
             </div>
+
+
+            <h2 class="text-center " data-i18n="navbar.taxify_fee">La redevance de TaxiFy est directement déduite de
+                votre
+                compte TaxiFy
+            </h2>
+
         </div>
     </section>
 
@@ -554,8 +730,7 @@
     </section>
     <!-- video -->
 
-
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="section-header">
             <h2 class="section-title text-center wow fadeInDown">Contactez-nous</h2>
             <p class="text-center wow fadeInDown"> Êtes-vous intéressé par nos services? Souhaitez-vous nous informer de
@@ -595,18 +770,162 @@
                     </form>
 
                 </div>
-                <div class="col-sm-8">
-                    <h3>TROUVEZ-NOUS SUR LA CARTE</h3>
-                    <div class="col-lg-6 ml-4">
-                        <div id="map_canvas2" style="width:800px;height: 600px;"></div>
+                <div class=" FAQ col-sm-8 " st>
+                    <h1>FAQ - chauffeur de taxi</h1>
+
+                    <div class="question">
+                        <span class="icon">+</span>
+                        Comment devenir chauffeur de taxi ?
+                        <div class="answer">
+                            <p>Pour devenir chauffeur de taxi, vous devez avoir un permis de conduire valide et une
+                                carte professionnelle de conducteur de taxi délivrée par votre ville ou votre région.
+                                Vous pouvez également avoir besoin de suivre une formation spécifique et de passer un
+                                examen pour obtenir cette carte professionnelle.</p>
+                            .
+                        </div>
                     </div>
+
+                    <div class="question">
+                        <span class="icon ">+</span>
+                        Comment fonctionne le système de réservation de courses ?
+                        <div class="answer">
+                            <p>Notre système de réservation de courses est basé sur une application mobile. Les clients
+                                peuvent réserver une course à l'avance ou la prendre immédiatement en utilisant
+                                l'application. Les chauffeurs de taxi peuvent accepter ou refuser les courses proposées
+                                via l'application.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <span class="icon">+</span>
+                        Comment puis-je contacter le service clientèle ?
+                        <div class="answer">
+                            <p>Vous pouvez contacter notre service clientèle par téléphone ou par e-mail. Les
+                                informations de contact sont disponibles sur notre site web et dans l'application pour
+                                chauffeur de taxi.</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
         </div>
-    </section><!--/#bottom-->
+    </section> -->
+
+    <!--/#bottom-->
+
+    <section id="contact">
+        <div class="section-header">
+            <h2 class="section-title text-center wow fadeInDown" data-i18n="navbar.paragraph5">Contactez-nous</h2>
+            <p class="text-center wow fadeInDown" data-i18n="navbar.paragraph6"> Êtes-vous intéressé par nos services?
+                Souhaitez-vous nous informer de
+                vos questions ou suggestions? Voulez-vous nous contacter concernant l'un de vos problèmes ou plaintes?
+                <br><b>S'il vous plaît, remplissez ce formulaire et nous vous contacterons bientôt.
+            </p>
+        </div>
+        <div class="container" style="margin-bottom: 20px;">
+            <div class="row">
+                <div class="col-sm-4" style="margin-top:-123px ;">
+                    <div class="card-form-header">
+                        <h3 data-i18n="navbar.titre1">Envoyez-nous un message</h3>
+                    </div>
+                    <form onsubmit="sendEmail(); return false;">
+                        <div class="select form-group">
+                            <select class="form-control" name="category_id" data-i18n="[placeholder]navbar.titre2">
+                                <option value="" data-i18n="navbar.titre2">Raison de nous contacter</option>
+                                <option value="Demande de renseignements" data-i18n="navbar.titre3">Demande de
+                                    renseignements</option>
+                                <option value="Réclamations et suggestions" data-i18n="navbar.titre4">Réclamations
+                                    et
+                                    suggestions</option>
+                                <option value="Support" data-i18n="navbar.titre5">Support</option>
+                                <option value="Autre" data-i18n="navbar.titre6">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Nom" required
+                                data-i18n="[placeholder]navbar.nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail" required
+                                data-i18n="[placeholder]navbar.email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Sujet" required
+                                data-i18n="[placeholder]navbar.sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="8" placeholder="Message" required
+                                data-i18n="[placeholder]navbar.message"></textarea>
+                        </div>
+                        <input type="submit" name="submit" value="Envoyer le message" data-i18n="[value]navbar.envoyer">
+                    </form>
 
 
+                </div>
+                <div class="col-sm-8 ">
+                    <div class="card-Faq mt-3">
+                        <div class="card-Faq-header">
+                            <h3 class="card-title" data-i18n="navbar.title">FAQ - Réservation de taxi</h3>
+                        </div>
+                        <div class="card-Faq-body">
+                            <div class="FAQ">
+                                <div class="question">
+                                    <span class="icon">+</span>
+                                    <span class="question-text" data-i18n="navbar.question1">Comment puis-je réserver un
+                                        taxi ?</span>
+                                    <div class="answer" data-i18n="navbar.answer1">Vous pouvez réserver un taxi en
+                                        utilisant notre formulaire de réservation en ligne, en appelant notre service
+                                        clientèle ou en utilisant notre application mobile.</div>
+                                </div>
+
+                                <div class="question">
+                                    <span class="icon">+</span>
+                                    <span class="question-text" data-i18n="navbar.question2">Quels types de véhicules
+                                        sont disponibles pour la réservation ?</span>
+                                    <div class="answer" data-i18n="navbar.answer2">Nous proposons une large gamme de
+                                        véhicules pour répondre à tous vos besoins, notamment des berlines, des minivans
+                                        et des voitures de luxe.</div>
+                                </div>
+
+                                <div class="question">
+                                    <span class="icon">+</span>
+                                    <span class="question-text" data-i18n="navbar.question3">Puis-je annuler ma
+                                        réservation ?</span>
+                                    <div class="answer" data-i18n="navbar.answer3">Oui, vous pouvez annuler votre
+                                        réservation à tout moment. Cependant, des frais d'annulation peuvent s'appliquer
+                                        en fonction du moment de l'annulation.</div>
+                                </div>
+
+                                <div class="question">
+                                    <span class="icon">+</span>
+                                    <span class="question-text" data-i18n="navbar.question4">Comment puis-je payer pour
+                                        ma réservation ?</span>
+                                    <div class="answer" data-i18n="navbar.answer4">Nous acceptons les paiements par
+                                        carte de crédit, PayPal et virement bancaire.</div>
+                                </div>
+
+                                <div class="question">
+                                    <span class="icon">+</span>
+                                    <span class="question-text" data-i18n="navbar.question5">Y a-t-il des frais
+                                        supplémentaires pour les réservations tardives ?</span>
+                                    <div class="answer" data-i18n="navbar.answer5">Des frais supplémentaires peuvent
+                                        s'appliquer pour les réservations effectuées tard le soir ou tôt le matin.
+                                        Veuillez contacter notre service clientèle pour plus d'informations.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
 
 
     <div class="card border border-yellow">
@@ -616,45 +935,47 @@
                     <div class="col-sm-9">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h3>ADRESSE</h3>
-                                <p>21 2023 TaxiFy, Genève Suisse, 2023 TaxiFy, Genève</p>
+                                <h3 data-i18n="navbar.addressTitle">ADRESSE</h3>
+                                <p data-i18n="navbar.address">21 2023 TaxiFy, Genève Suisse, 2023 TaxiFy, Genève</p>
                             </div>
                             <div class="col-sm-4">
-                                <h3>NUMÉRO DE TÉLÉPHONE</h3>
-                                <p>471 02 5566447788 <br>471 02 5566447788</p>
+                                <h3 data-i18n="navbar.phoneTitle">NUMÉRO DE TÉLÉPHONE</h3>
+                                <p data-i18n="navbar.phone">471 02 5566447788 <br>471 02 5566447788</p>
                             </div>
                             <div class="col-sm-4">
-                                <h3>CONNECTEZ-VOUS AVEC NOUS</h3>
+                                <h3 data-i18n="navbar.connectTitle">CONNECTEZ-VOUS AVEC NOUS</h3>
                                 <ul id="follow">
-                                    <li><a href="#" target="_blank"><i class="facebook"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="youtube"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="linkedin"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="instagram"></i></a></li>
+                                    <li><a href="#" target="_blank" data-i18n="navbar.facebook"></a></li>
+                                    <li><a href="#" target="_blank" data-i18n="navbar.youtube"></a></li>
+                                    <li><a href="#" target="_blank" data-i18n="navbar.linkedin"></a></li>
+                                    <li><a href="#" target="_blank" data-i18n="navbar.instagram"></a></li>
                                 </ul>
-
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <h3>PLAN DU SITE</h3>
+                                <h3 data-i18n="navbar.siteMapTitle"></h3>
                                 <ul>
-                                    <li class="active"><a href="index.html">Accueil</a></li>
-                                    <li class=""><a href="conducteur.html">Je suis un taxi</a></li>
-                                    <li class=""><a href="info.html">Informations sur TaxiFy</a></li>
+                                    <li class="active"><a href="index.html" data-i18n="navbar.home">Acceuil</a></li>
+                                    <li><a href="termeCondition.html" aria-current="page"
+                                            data-i18n="navbar.termsAndConditions">Terms et
+                                            Conditions</a></li>
+                                    <li><a href="../faq/index.html" data-i18n="navbar.faq">FAQ</a></li>
 
-                                    <li class=""><a href="contact.html">Contact</a></li>
+                                    <li><a href="xyhzertFI.html" data-i18n="navbar.contact">Contact</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 text-right mr-1">
+                    <div class="col-sm-3 text-right">
                         <a class="store-btn google-play" target="_blank"
                             href="https://play.google.com/store/apps/details?id=taxify.switzerland.taxi.driver&amp;hl=fr_CH&amp;gl=US"></a>
                         <a class="store-btn app-store" target="_blank"
                             href="https://play.google.com/store/apps/details?id=taxify.switzerland.taxi.passenger&amp;hl=fr_CH&amp;gl=US"></a>
-                    </div>.
+                    </div>
                 </div>
             </div>
-        </footer><!--/#footer-->
+        </footer>
     </div>
     <!--/#footer-->
     </div>
@@ -666,7 +987,7 @@
 
     <script src="public/js/jquery.js"></script>
     <script src="public/js/message.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
+    <!-- <script src="public/js/bootstrap.min.js"></script> -->
     <script src="public/js/owl.carousel.min.js"></script>
     <script src="public/js/mousescroll.js"></script>
     <script src="public/js/smoothscroll.js"></script>
@@ -676,6 +997,7 @@
     <script src="public/js/wow.min.js"></script>
     <script src="public/js/main.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>

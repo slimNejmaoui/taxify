@@ -1,14 +1,6 @@
 jQuery(function($) {'use strict';
 
-	// Navigation Scroll
-	$(window).scroll(function(event) {
-		Scroll();
-	});
 
-	$('.navbar-collapse ul li a').on('click', function() {  
-		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
-		return false;
-	});
 
 	// User define function
 	function Scroll() {
@@ -290,5 +282,101 @@ window.addEventListener('scroll', () => {
   lastScrollPosition = currentScrollPosition;
 });
 
+$(document).ready(function(){
+	$('.image1').addClass('animated');
+	$('.image2').addClass('animated');
+	$('.image3').addClass('animated');
+  
+	$('.text1').addClass('animated');
+	$('.text2').addClass('animated');
+	$('.text3').addClass('animated');
+	$('.text4').addClass('animated');
+  });
+  
+  $(window).scroll(function() {
+	var hT = $('#work-process').offset().top,
+		hH = $('#work-process').outerHeight(),
+		wH = $(window).height(),
+		wS = $(this).scrollTop();
+	if (wS > (hT+hH-wH)){
+	  setTimeout(function(){
+		$('.image2').css('visibility', 'visible');
+		$('.text2').css('visibility', 'visible');
+		$('.image2').addClass('fadeInLeft');
+		$('.text2').addClass('fadeInLeft');
+	  }, 500);
+	  setTimeout(function(){
+		$('.image3').css('visibility', 'visible');
+		$('.text3').css('visibility', 'visible');
+		$('.image3').addClass('fadeInLeft');
+		$('.text3').addClass('fadeInLeft');
+	  }, 1000);
+	  setTimeout(function(){
+		$('.image5').css('visibility', 'visible');
+		$('.text3').css('visibility', 'visible');
+		$('.image5').addClass('fadeInLeft');
+		$('.text3').addClass('fadeInLeft');
+	  }, 1500);
+	  setTimeout(function(){
+		$('.image5').css('visibility', 'visible');
+		$('.text4').css('visibility', 'visible');
+		$('.image5').addClass('fadeInLeft');
+		$('.text4').addClass('fadeInLeft');
+	  }, 1500);
+	}
+  });
+  new WOW().init({
+    animateClass: 'animated',
+    offset: 2000,
+    mobile: false,
+    live: true
+});
+
+  // Cacher toutes les réponses au début
+  var answers = document.getElementsByClassName("answer");
+  for (var i = 0; i < answers.length; i++) {
+    answers[i].style.display = "none";
+  }
+
+  // Ajouter un gestionnaire d'événements au clic sur chaque question
+  var questions = document.getElementsByClassName("question");
+  for (var i = 0; i < questions.length; i++) {
+    questions[i].addEventListener("click", function() {
+      // Changer l'icône et afficher/masquer la réponse
+      var icon = this.querySelector(".icon");
+      var answer = this.querySelector(".answer");
+      if (icon.innerHTML == "+") {
+        icon.innerHTML = "-";
+        answer.style.display = "block";
+      } else {
+        icon.innerHTML = "+";
+        answer.style.display = "none";
+      }
+    });
+  }
+  // Récupérer tous les éléments de réponse
+var answers = document.querySelectorAll('.answer');
+
+// Pour chaque réponse, ajouter un écouteur d'événements sur le clic
+answers.forEach(function(answer) {
+  answer.addEventListener('click', function() {
+    // Ajouter la classe "active" à l'élément parent
+    answer.parentNode.classList.toggle('active');
+  });
+});
+
+  window.addEventListener('resize', function () {
+	google.maps.event.trigger(map, 'resize');
+  });
 
 
+  function changeLanguage(lang) {
+	i18next.changeLanguage(lang, function(err, t) {
+	  // retraduire le contenu de la page
+	  document.querySelectorAll('[data-i18n]').forEach(function(element) {
+		var key = element.getAttribute('data-i18n');
+		element.innerHTML = t(key, { escape: false });
+	  });
+	});
+  }
+  
